@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  user-select: none;
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+
+.navbar-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 9vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  z-index: 99;
+}
+
+.navbar-container .search-container {
+  height: 30%;
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+  background: #aaa;
+  border-radius: 20px;
+  padding: 0 1vw;
+}
+
+.navbar-container .search-container .search-icon {
+  height: 60%;
+
+}
+
+.navbar-container .search-container .search-input {
+  width: 85%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: #373737;
+}
+
+.navbar-container .search-container .search-input:focus {
+  outline: none;
+}
+
+.navbar-container .menu-options {
+  width: 45%;
+  height: 100%;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  color: #f4f4f4;
+  font-size: 1.2rem;
+}
+
+.navbar-container .menu-options .menu-option {
+  cursor: pointer;
+  width: 100%;
+
+}
+
+.navbar-container .menu-options .menu-option a {
+  text-decoration: none;
+  color: #f4f4f4;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.section {
+  direction: rtl;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section.landing {
+  background: url('../img/botanical_garden_shiraz.jpg') no-repeat center center/cover;
+}
+
+.section .card {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #373737;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section .card .btns {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  height: 4%;
+  width: 4.5%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.section .card .btns .btn {
+  width: 13px;
+  height: 13px;
+  background-color: #FFCC00;
+  border-radius: 50%;
+}
+
+.section .card .btns .btn:first-child {
+  background-color: #920000;
+}
+
+.section .card .btns .btn:last-child {
+  background-color: #00EC2F;
+}
+
+.section.landing .text-container {
+  width: 100%;
+}
+
+.section .text-container {
+  width: 30%;
+  color: #f4f4f4;
+}
+
+.section .text-container .title {
+  font-size: 2.25vw;
+  margin-bottom: 5%;
+  color: #E1d200;
+}
+
+.section .text-container .desc {
+  font-size: 1.5vw;
+  align-self: flex-start;
+}
+
+.section .pic {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+}
+
+.section .text-container.landing {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .text-container.landing .bg-dark {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section .text-container.landing .bg-dark .title:nth-child(2) {
+  margin-bottom: 0;
+  font-size: 3vw;
+}
+
+.section .text-container.landing .bg-dark .title:first-child {
+  font-size: 5vw;
+  color: #f4f4f4;
+  margin-bottom: 1%;
+}
