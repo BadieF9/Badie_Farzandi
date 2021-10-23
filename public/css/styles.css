@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #f4f4f4;
+  --secondary-color: #E1d200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   user-select: none;
@@ -13,7 +22,7 @@ body {
 
 
 .navbar-container {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -111,6 +120,19 @@ body {
   border-radius: 15px;
   overflow: hidden;
   position: relative;
+  box-shadow:  6px 6px 14px #000,
+  -6px -6px 14px #5d5d5d;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.section .card:hover {
+  box-shadow:  5px 5px 10px #000,
+  -5px -5px 10px #5d5d5d;
+}
+
+.section .card:active {
+  box-shadow: inset 5px 5px 10px #000,
+  inset -5px -5px 10px #5d5d5d;
 }
 
 .section .card .btns {
@@ -128,14 +150,20 @@ body {
   height: 13px;
   background-color: #FFCC00;
   border-radius: 50%;
+  box-shadow: inset 2px 2px 6px #997A00,
+  inset -2px -2px 6px #FFDD00;
 }
 
 .section .card .btns .btn:first-child {
   background-color: #920000;
+  box-shadow: inset 3px 3px 6px #5E0000,
+  inset -3px -3px 6px #B80000;
 }
 
 .section .card .btns .btn:last-child {
   background-color: #00EC2F;
+  box-shadow: inset 3px 3px 6px #00B23A,
+  inset -3px -3px 6px #00FF54;
 }
 
 .section.landing .text-container {
@@ -162,6 +190,15 @@ body {
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
+  box-shadow:  6px 6px 14px #000,
+  -6px -6px 14px #5d5d5d;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.section .card:hover .pic,
+.section .card:active .pic {
+  box-shadow:  5px 5px 10px #000,
+  -5px -5px 10px #5d5d5d;
 }
 
 .section .text-container.landing {
@@ -192,4 +229,60 @@ body {
   font-size: 5vw;
   color: #f4f4f4;
   margin-bottom: 1%;
+}
+
+/*  */
+.card.weather {
+  flex-direction: column;
+  justify-content: center;
+  color: var(--secondary-color);
+}
+
+.card.weather .title {
+  font-size: 2.25vw;
+  margin-bottom: 2%;
+
+}
+
+table {
+  width: 95%;
+  height: 70%;
+  border-collapse: collapse;
+  color: var(--secondary-color);
+  display: grid;
+  grid-template-areas: 'head'
+                       'body';
+  grid-template-rows: 1fr 5fr;
+  grid-template-columns: 1fr;
+}
+
+thead {
+  width: 100%;
+  grid-area: head;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+tbody {
+  grid-area: body;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+tr {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: 1fr;
+}
+
+th, td {
+  display: flex;
+  direction: ltr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
