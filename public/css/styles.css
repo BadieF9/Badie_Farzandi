@@ -7,6 +7,7 @@
 :root {
   --primary-color: #f4f4f4;
   --secondary-color: #E1d200;
+  --primary-bg-color: #373737;
 }
 
 html {
@@ -116,7 +117,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #373737;
+  background-color: var(--primary-bg-color);
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -285,4 +286,19 @@ th, td {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.section .sample-video {
+  box-shadow:  6px 6px 14px #000,
+  -6px -6px 14px #5d5d5d;
+}
+
+.footer {
+  height: 5vh;
+  color: var(--primary-color);
+  font-size: 1.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-bg-color);
 }
