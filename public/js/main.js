@@ -1,3 +1,5 @@
+const moment = require("moment");
+console.log(moment().day())
 const menuOptions = document.querySelectorAll('.menu-options .menu-option a');
 menuOptions.forEach(menuOption => {
   menuOption.addEventListener('click', (e) => {
@@ -9,3 +11,6 @@ menuOptions.forEach(menuOption => {
     });
   })
 })
+
+const searchBox = document.querySelector('.search-input')
+searchBox.nodeValue = moment().format('L');

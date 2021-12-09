@@ -1,0 +1,25 @@
+{
+  "name": "badie_farzandi",
+  "version": "1.0.0",
+  "description": "Educational project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BadieF9/Badie_Farzandi.git"
+  },
+  "author": "Badie Farzandi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BadieF9/Badie_Farzandi/issues"
+  },
+  "homepage": "https://github.com/BadieF9/Badie_Farzandi#readme",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "granim": "^2.0.0",
+    "moment": "^2.29.1"
+  },
+  "type": "commonjs"
+}

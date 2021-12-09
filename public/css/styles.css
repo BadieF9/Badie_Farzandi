@@ -6,7 +6,7 @@
 
 :root {
   --primary-color: #f4f4f4;
-  --secondary-color: #E1d200;
+  --secondary-color: #e1d200;
   --primary-bg-color: #373737;
 }
 
@@ -20,7 +20,6 @@ body {
   position: relative;
   background-color: #1a1a1a;
 }
-
 
 .navbar-container {
   position: fixed;
@@ -50,7 +49,6 @@ body {
 
 .navbar-container .search-container .search-icon {
   height: 60%;
-
 }
 
 .navbar-container .search-container .search-input {
@@ -79,7 +77,6 @@ body {
 .navbar-container .menu-options .menu-option {
   cursor: pointer;
   width: 100%;
-
 }
 
 .navbar-container .menu-options .menu-option a {
@@ -108,7 +105,8 @@ body {
 }
 
 .section.landing {
-  background: url('../img/botanical_garden_shiraz.jpg') no-repeat center center/cover;
+  background: url("../img/botanical_garden_shiraz.jpg") no-repeat center
+    center/cover;
 }
 
 .section .card {
@@ -121,19 +119,16 @@ body {
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  box-shadow:  6px 6px 14px #000,
-  -6px -6px 14px #5d5d5d;
+  box-shadow: 6px 6px 14px #000, -6px -6px 14px #5d5d5d;
   transition: box-shadow 0.2s ease-in-out;
 }
 
 .section .card:hover {
-  box-shadow:  5px 5px 10px #000,
-  -5px -5px 10px #5d5d5d;
+  box-shadow: 5px 5px 10px #000, -5px -5px 10px #5d5d5d;
 }
 
 .section .card:active {
-  box-shadow: inset 5px 5px 10px #000,
-  inset -5px -5px 10px #5d5d5d;
+  box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #5d5d5d;
 }
 
 .section .card .btns {
@@ -149,22 +144,19 @@ body {
 .section .card .btns .btn {
   width: 13px;
   height: 13px;
-  background-color: #FFCC00;
+  background-color: #ffcc00;
   border-radius: 50%;
-  box-shadow: inset 2px 2px 6px #997A00,
-  inset -2px -2px 6px #FFDD00;
+  box-shadow: inset 2px 2px 6px #997a00, inset -2px -2px 6px #ffdd00;
 }
 
 .section .card .btns .btn:first-child {
   background-color: #920000;
-  box-shadow: inset 3px 3px 6px #5E0000,
-  inset -3px -3px 6px #B80000;
+  box-shadow: inset 3px 3px 6px #5e0000, inset -3px -3px 6px #b80000;
 }
 
 .section .card .btns .btn:last-child {
-  background-color: #00EC2F;
-  box-shadow: inset 3px 3px 6px #00B23A,
-  inset -3px -3px 6px #00FF54;
+  background-color: #00ec2f;
+  box-shadow: inset 3px 3px 6px #00b23a, inset -3px -3px 6px #00ff54;
 }
 
 .section.landing .text-container {
@@ -179,7 +171,7 @@ body {
 .section .text-container .title {
   font-size: 2.25vw;
   margin-bottom: 5%;
-  color: #E1d200;
+  color: #e1d200;
 }
 
 .section .text-container .desc {
@@ -191,15 +183,13 @@ body {
   width: 30vw;
   height: 30vw;
   border-radius: 50%;
-  box-shadow:  6px 6px 14px #000,
-  -6px -6px 14px #5d5d5d;
+  box-shadow: 6px 6px 14px #000, -6px -6px 14px #5d5d5d;
   transition: box-shadow 0.2s ease-in-out;
 }
 
 .section .card:hover .pic,
 .section .card:active .pic {
-  box-shadow:  5px 5px 10px #000,
-  -5px -5px 10px #5d5d5d;
+  box-shadow: 5px 5px 10px #000, -5px -5px 10px #5d5d5d;
 }
 
 .section .text-container.landing {
@@ -242,7 +232,6 @@ body {
 .card.weather .title {
   font-size: 2.25vw;
   margin-bottom: 2%;
-
 }
 
 table {
@@ -251,8 +240,9 @@ table {
   border-collapse: collapse;
   color: var(--secondary-color);
   display: grid;
-  grid-template-areas: 'head'
-                       'body';
+  grid-template-areas:
+    "head"
+    "body";
   grid-template-rows: 1fr 5fr;
   grid-template-columns: 1fr;
 }
@@ -280,7 +270,8 @@ tr {
   grid-template-rows: 1fr;
 }
 
-th, td {
+th,
+td {
   display: flex;
   direction: ltr;
   justify-content: center;
@@ -289,8 +280,7 @@ th, td {
 }
 
 .section .sample-video {
-  box-shadow:  6px 6px 14px #000,
-  -6px -6px 14px #5d5d5d;
+  box-shadow: 6px 6px 14px #000, -6px -6px 14px #5d5d5d;
 }
 
 .footer {
@@ -301,4 +291,15 @@ th, td {
   justify-content: center;
   align-items: center;
   background-color: var(--primary-bg-color);
+}
+
+.navbar-container canvas {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
